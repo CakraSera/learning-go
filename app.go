@@ -2,23 +2,24 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	const inflationRate = 2.5
+	for {
+		var menuSelected int
+		fmt.Println("Calculator Suhu")
+		fmt.Println("Select Menu you want:")
+		fmt.Println("1. Celvin to Fahrenheit")
+		fmt.Println("4. Exit")
+		fmt.Scan(&menuSelected)
 
-	var investmentAmount float64
+		if menuSelected == 1 {
+			fmt.Println("menu")
+		} else {
+			fmt.Println("good bye")
+			return
+		}
+	}
 
-	var expectedPercentage, year = 5.5, 10.0
-
-	fmt.Print("Input investment amount: ")
-
-	fmt.Scan(&investmentAmount)
-
-	futureValue := investmentAmount * math.Pow(1+expectedPercentage/100, year)
-	futureValueDeflation := investmentAmount * math.Pow(1-inflationRate/100, year)
-
-	fmt.Println("Result after", year, "years is", futureValue)
-	fmt.Println("Result deflation after", year, "years is", futureValueDeflation)
+	fmt.Println("Thanks for using my apps")
 }

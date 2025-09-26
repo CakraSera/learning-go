@@ -1,0 +1,5 @@
+package ProfitCalculator
+
+func main() {
+
+}
